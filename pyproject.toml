@@ -6,6 +6,8 @@ authors = ["Islam <islamkazproject@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+
+[tool.poetry.dev-dependencies]
 flake8 = "^5.0.3"
 black = "^22.6.0"
 flake8-bugbear = "^22.7.1"
@@ -14,8 +16,6 @@ flake8-commas = "^2.1.0"
 flake8-variables-names = "^0.0.5"
 flake8-import-order = "^0.18.1"
 mypy = "^0.971"
-
-[tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
