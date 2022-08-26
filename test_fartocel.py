@@ -2,12 +2,12 @@ import unittest
 from fartocel import far_to_cel
 
 
-class TestCelsToFar(unittest.TestCase):
+class TestFarToCels(unittest.TestCase):
     def test_cel(self):
 
         self.assertEqual(far_to_cel(32), 0.0)
         self.assertEqual(far_to_cel(5), -15.0)
-        self.assertEqual(far_to_cel(104), 194.0)
+        self.assertEqual(far_to_cel(194), 90.0)
         self.assertEqual(far_to_cel(-40), -40.0)
 
     def test_types(self):
