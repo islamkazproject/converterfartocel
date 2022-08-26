@@ -1,4 +1,4 @@
-def far_to_cel(far):
+def far_to_cel(far: str) -> int or float:
     """Returns converted Fahrenheit to Celsius"""
     if type(far) not in [int, float]:
         raise TypeError("Fahrenheit must be non-negative real number only")
