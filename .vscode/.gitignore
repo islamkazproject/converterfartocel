@@ -1,8 +1,0 @@
-.vscode/
-.mypy_cache
-__pycache__
-pyproject.toml
-setup.cfg
-poetry.lock
-fartocel.py
-test_fartocel.py
