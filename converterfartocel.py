@@ -8,4 +8,4 @@ def cel_to_far(cels: str) -> int or float:
 
 
 if __name__ == "__main__":
-    print(cel_to_far(90))
+    print(cel_to_far(-274))
