@@ -16,6 +16,3 @@ def far_to_cel(far: str) -> int or float:
     return (far - 32) * 5 / 9
 
 
-if __name__ == "__main__":
-    print(cel_to_far(-273))
-    print(far_to_cel(-459))
