@@ -1,7 +1,7 @@
 from typing import Union
 
 
-def cel_to_far(cels: int) -> Union[str, float]:
+def cel_to_far(cels: Union[int, float]) -> Union[str, float]:
     """Returns converted Celsius to Fahrenheit."""
     if type(cels) not in [int, float]:
         raise TypeError("Celsius must be non-negative real number only")
@@ -10,7 +10,7 @@ def cel_to_far(cels: int) -> Union[str, float]:
     return (cels * 9 / 5) + 32
 
 
-def far_to_cel(far: int) -> Union[str, float]:
+def far_to_cel(far: Union[int, float]) -> Union[str, float]:
     """Returns converted Fahrenheit to Celsius"""
     if type(far) not in [int, float]:
         raise TypeError("Fahrenheit must be non-negative real number only")
@@ -19,5 +19,5 @@ def far_to_cel(far: int) -> Union[str, float]:
     return (far - 32) * 5 / 9
 
 
-# if __name__ == "__main__":
-#     print(cel_to_far(-274), type(cel_to_far(0)))
+if __name__ == "__main__":
+    print(cel_to_far(-273), type(cel_to_far(0)))
