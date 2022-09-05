@@ -1,0 +1,6 @@
+# Automatically created by mypy
+*
+.vscode/
+.mypy_cache
+setup.cfg
+__pycache__/
