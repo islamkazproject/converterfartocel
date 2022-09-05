@@ -19,5 +19,3 @@ def far_to_cel(far: Union[int, float]) -> Union[str, float]:
     return (far - 32) * 5 / 9
 
 
-if __name__ == "__main__":
-    print(cel_to_far(-273), type(cel_to_far(0)))
