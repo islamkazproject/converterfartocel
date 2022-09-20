@@ -1,3 +1,4 @@
+import argparse
 from typing import Union
 
 
@@ -22,5 +23,30 @@ def far_to_cel(far: Union[int, float]) -> Union[str, float]:
         )
     return (far - 32) * 5 / 9
 
-if __name__ == '__main__':
-    print(cel_to_far(-274))
+
+parser = argparse.ArgumentParser(
+    description="Choose where to convert from and what to convert to "
+)
+parser.add_argument(
+    "-f",
+    "--From",
+    type=str,
+    default=None,
+    help="Choose where to convert from (cels || far)",
+)
+parser.add_argument(
+    "-t", "--To", type=str, default=None, help="Choose where to convert (cels || far)"
+)
+
+parser.add_argument("value", type=float, default= None, help="Enter the value")
+
+args = parser.parse_args()
+
+
+if (args.From == "cels") and (args.To == "far"):
+    print(cel_to_far(args.value))
+
+elif (args.From == "far") and (args.To == "cels"):
+    print(far_to_cel(args.value))
+else:
+    raise ValueError("Oops, looks like you entered something wrong, try again!")
